@@ -9,8 +9,8 @@ RUN apt-get update > /dev/null && \
     docker-php-ext-enable zip && \
     # Download and extract latest build
     cd /var/www/ && \
-    wget https://github.com/filegator/static/raw/master/builds/filegator_latest.zip && \
-    unzip filegator_latest.zip && rm filegator_latest.zip && \
+    wget https://github.com/technocalorie/brainfreeze-ftp-server_powered-by-filegator/releases/download/v7.7.2/filegator_v7.7.2.zip && \
+    unzip filegator_v7.7.2.zip && rm filegator_v7.7.2.zip && \
     chown -R www-data:www-data filegator/ && \
     chmod -R 775 filegator/ && \
     # configure Apache to use the value of APACHE_DOCUMENT_ROOT as its default Document Root
